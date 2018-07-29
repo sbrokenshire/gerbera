@@ -341,6 +341,30 @@ Ref<Element> UpnpXML_RenderDeviceDescription(String presentationURL)
 
     Ref<Element> iconList(new Element(_("iconList")));
 
+    Ref<Element> icon260_png(new Element(_("icon")));
+    icon260_png->appendTextChild(_("mimetype"), _(DESC_ICON_PNG_MIMETYPE));
+    icon260_png->appendTextChild(_("width"), _("260"));
+    icon260_png->appendTextChild(_("height"), _("260"));
+    icon260_png->appendTextChild(_("depth"), _("24"));
+    icon260_png->appendTextChild(_("url"), _(DESC_ICON260_PNG));
+    iconList->appendElementChild(icon260_png);
+
+    Ref<Element> icon260_bmp(new Element(_("icon")));
+    icon260_bmp->appendTextChild(_("mimetype"), _(DESC_ICON_BMP_MIMETYPE));
+    icon260_bmp->appendTextChild(_("width"), _("260"));
+    icon260_bmp->appendTextChild(_("height"), _("260"));
+    icon260_bmp->appendTextChild(_("depth"), _("24"));
+    icon260_bmp->appendTextChild(_("url"), _(DESC_ICON260_BMP));
+    iconList->appendElementChild(icon260_bmp);
+
+    Ref<Element> icon260_jpg(new Element(_("icon")));
+    icon260_jpg->appendTextChild(_("mimetype"), _(DESC_ICON_JPG_MIMETYPE));
+    icon260_jpg->appendTextChild(_("width"), _("260"));
+    icon260_jpg->appendTextChild(_("height"), _("260"));
+    icon260_jpg->appendTextChild(_("depth"), _("24"));
+    icon260_jpg->appendTextChild(_("url"), _(DESC_ICON260_JPG));
+    iconList->appendElementChild(icon260_jpg);
+
     Ref<Element> icon120_png(new Element(_("icon")));
     icon120_png->appendTextChild(_("mimetype"), _(DESC_ICON_PNG_MIMETYPE));
     icon120_png->appendTextChild(_("width"), _("120"));

@@ -179,6 +179,9 @@
 #define DESC_ICON120_JPG                "/icons/mt-icon120.jpg"
 #define DESC_ICON120_PNG                "/icons/mt-icon120.png"
 #define DESC_ICON120_BMP                "/icons/mt-icon120.bmp"
+#define DESC_ICON260_JPG                "/icons/mt-icon260.jpg"
+#define DESC_ICON260_PNG                "/icons/mt-icon260.png"
+#define DESC_ICON260_BMP                "/icons/mt-icon260.bmp"
 
 
     // media receiver registrar (xbox 360)
